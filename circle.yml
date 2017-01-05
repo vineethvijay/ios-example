@@ -13,5 +13,5 @@ test:
 deployment:
   beta_distribution:
     branch: develop
-     commands:
-
+    commands:
+      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -m true
