@@ -1,10 +1,10 @@
 machine:
   xcode:
-    version: 8.2.1
+    version: 8.2
 
 test:
   override:
     - xcrun simctl list
     - set -o pipefail
-    - xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" PROVISIONING_PROFILE="" -configuration Debug -sdk iphonesimulator -destination 'id=D0D2EBA2-A0DC-4710-87C5-79DFDBF7E123' -scheme "Main" clean build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+    - xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" PROVISIONING_PROFILE="" -configuration Debug -sdk iphonesimulator -destination 'id=889E4E07-0022-4DB9-9A49-9C8CC680A957' -scheme "Main" clean build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
