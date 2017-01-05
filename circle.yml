@@ -1,6 +1,4 @@
 machine:
-  environment:
-    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Acme Inc. (GL31ZZ3256)"
   xcode:
     version: 8.2
 
