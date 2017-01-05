@@ -1,0 +1,9 @@
+machine:
+xcode:
+version: 8.0
+
+test:
+  override:
+      - set -o pipefail
+      - xcodebuild -scheme "Main" -sdk iphonesimulator -destination 'name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcp   retty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+
