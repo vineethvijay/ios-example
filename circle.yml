@@ -1,4 +1,6 @@
 machine:
+  environment:
+    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Acme Inc. (GL31ZZ3256)"
   xcode:
     version: 8.2
 
@@ -10,7 +12,6 @@ test:
 
 deployment:
   beta_distribution:
-    branch: master
+    branch: develop
      commands:
-       - gym
 
