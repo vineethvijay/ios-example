@@ -8,3 +8,10 @@ test:
     - set -o pipefail
     - xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" PROVISIONING_PROFILE="" -configuration Debug -sdk iphonesimulator -destination 'name=iPhone 6,OS=10.2' -scheme "Main" clean build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
+deployment:
+  alpha_distribution:
+    branch: develop
+      GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: Paul Yorke (957K4ZUMJV)"
+      commands:
+        - gym --scheme "Main"
+

@@ -37,7 +37,7 @@ class Example_ProjectTests: XCTestCase {
     }
 
     func testWelcomeMessagePrefixAndSuffix() {
-        let sut = ContentProvider(welcomeMessage: "Welcome", prefix: "PREFIX", suffix: "HA")
+        let sut = ContentProvider(welcomeMessage: "Welcome", prefix: "PREFIX", suffix: "HA!")
         XCTAssertEqual(sut.welcomeMessage, "PREFIX Welcome HA!")
     }
 }
