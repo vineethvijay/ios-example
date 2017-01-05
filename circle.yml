@@ -5,5 +5,5 @@ machine:
 test:
   override:
       - set -o pipefail
-      - xcodebuild -scheme "Main" -sdk iphonesimulator -destination 'name=iPhone 6,OS=10.0' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcp   retty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+      - xcodebuild -scheme "Main" -sdk iphonesimulator -destination '33D34EBA-703E-4A82-8838-BE75171492E1' ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
 
