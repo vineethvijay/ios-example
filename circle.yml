@@ -11,6 +11,7 @@ deployment:
   alpha_distribution:
     branch: develop
     commands:
+      - sed -i '' 's/ProvisioningStyle = Automatic/ProvisioningStyle = Manual/g' Example\ Project.xcodeproj/project.pbxproj
       - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -o $CIRCLE_ARTIFACTS
   beta_distribution:
     branch: release
