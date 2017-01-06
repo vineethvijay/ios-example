@@ -150,12 +150,12 @@
 					8646BC941E1EBBF500D12808 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 957K4ZUMJV;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					8646BCA81E1EBBF500D12808 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 957K4ZUMJV;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 8646BC941E1EBBF500D12808;
 					};
 				};
@@ -302,11 +302,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "45691fa0-6eda-44e7-8037-c939ec8f6554";
+				PROVISIONING_PROFILE_SPECIFIER = "Example Ad Hoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Alpha;
@@ -428,6 +431,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "85081270-e5e5-4bf2-8ca9-2ef3082a7bfb";
+				PROVISIONING_PROFILE_SPECIFIER = "Example App";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -436,11 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "acdc4a87-c8e4-4fa7-981a-cd33a5588b1a";
+				PROVISIONING_PROFILE_SPECIFIER = "Example Distribution";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
