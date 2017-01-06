@@ -21,4 +21,11 @@ deployment:
       - sed -i '' 's/DevelopmentTeam = 957K4ZUMJV/DevelopmentTeam = BGC57N7M47/g' Example\ Project.xcodeproj/project.pbxproj
       - sed -i '' 's/DEVELOPMENT_TEAM = 957K4ZUMJV/DEVELOPMENT_TEAM = BGC57N7M47/g' Example\ Project.xcodeproj/project.pbxproj
       - fastlane gym -s "Main" -q "Release" -j enterprise -o $CIRCLE_ARTIFACTS --xcargs "BUNDLE_VERSION=$CIRCLE_BUILD_NUM"
+      - ipa distribute:hockeyapp
+          --file             $CIRCLE_ARTIFACTS/Example\ Project.ipa
+          --token            "$388a6e9b9e66497c8c8c002e00e800ae"
+          --notes            "CircleCI build $CIRCLE_BUILD_NUM"
+          --commit-sha       "$CIRCLE_SHA1"
+          --build-server-url "$CIRCLE_BUILD_URL"
+          --repository-url   "$CIRCLE_REPOSITORY_URL"
 
