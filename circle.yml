@@ -12,4 +12,4 @@ deployment:
   beta_distribution:
     branch: develop
     commands:
-      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc
+      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -o $CIRCLE_ARTIFACTS
