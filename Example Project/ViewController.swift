@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        contentProvider = ContentProvider(welcomeMessage: "This is my view!", suffix: "IT WORKED!!")
+        contentProvider = ContentProvider(welcomeMessage: "This is my view!", prefix: "PAUL RULES!!", suffix: "IT WORKED!!")
         welcomeMessage.text = contentProvider?.welcomeMessage ?? ""
     }
 
