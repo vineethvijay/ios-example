@@ -611,7 +611,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -629,7 +629,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -647,7 +647,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -667,8 +667,9 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				IBSC_MODULE = Watch_Extension;
 				INFOPLIST_FILE = Watch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "5593b351-728f-4e1f-86dd-55a8ebc7388a";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -684,7 +685,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -701,7 +702,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -718,7 +719,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -732,11 +733,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: The New York Times Company";
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nytimes.NYTimes.beta.watchapp.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "f03dd71a-6e1a-4df2-8ca3-fd7cec0d27f6";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
