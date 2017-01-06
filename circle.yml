@@ -12,4 +12,4 @@ deployment:
   beta_distribution:
     branch: develop
     commands:
-        - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -m true -i "iPhone Distribution: Paul Yorke (957K4ZUMJV)"
+      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc
