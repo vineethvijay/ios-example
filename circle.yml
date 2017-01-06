@@ -24,7 +24,7 @@ deployment:
       - ipa distribute:hockeyapp
           --file             $CIRCLE_ARTIFACTS/Example\ Project.ipa
           --token            "388a6e9b9e66497c8c8c002e00e800ae"
-          --notes            "$CI_PULL_REQUESTS"
+          --notes            "Pull Request Notes go here"
           --commit-sha       "$CIRCLE_SHA1"
           --build-server-url "$CIRCLE_BUILD_URL"
           --repository-url   "$CIRCLE_REPOSITORY_URL"
