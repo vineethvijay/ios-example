@@ -12,12 +12,13 @@ deployment:
     branch: develop
     commands:
       - sed -i '' 's/ProvisioningStyle = Automatic/ProvisioningStyle = Manual/g' Example\ Project.xcodeproj/project.pbxproj
-      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -o $CIRCLE_ARTIFACTS
+      - fastlane gym -s "Main" -q "Alpha" -j ad-hoc -o $CIRCLE_ARTIFACTS --xcargs "BUNDLE_VERSION={$CIRCLE_BUILD_NUM}"
+
   beta_distribution:
     branch: release
     commands:
       - sed -i '' 's/ProvisioningStyle = Automatic/ProvisioningStyle = Manual/g' Example\ Project.xcodeproj/project.pbxproj
       - sed -i '' 's/DevelopmentTeam = 957K4ZUMJV/DevelopmentTeam = BGC57N7M47/g' Example\ Project.xcodeproj/project.pbxproj
       - sed -i '' 's/DEVELOPMENT_TEAM = 957K4ZUMJV/DEVELOPMENT_TEAM = BGC57N7M47/g' Example\ Project.xcodeproj/project.pbxproj
-      - fastlane gym -s "Main" -q "Release" -j enterprise -o $CIRCLE_ARTIFACTS
+      - fastlane gym -s "Main" -q "Release" -j enterprise -o $CIRCLE_ARTIFACTS --xcargs "BUNDLE_VERSION={$CIRCLE_BUILD_NUM}"
 
