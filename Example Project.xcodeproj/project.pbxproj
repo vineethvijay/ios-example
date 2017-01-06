@@ -306,7 +306,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "45691fa0-6eda-44e7-8037-c939ec8f6554";
 				PROVISIONING_PROFILE_SPECIFIER = "Example Ad Hoc";
@@ -387,7 +387,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "acdc4a87-c8e4-4fa7-981a-cd33a5588b1a";
 				PROVISIONING_PROFILE_SPECIFIER = "Example Distribution";
@@ -511,7 +511,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -528,7 +528,7 @@
 				DEVELOPMENT_TEAM = 957K4ZUMJV;
 				INFOPLIST_FILE = "Example Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iyorke.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "2558c19e-7609-4540-a9ad-1fc2b176a4ca";
