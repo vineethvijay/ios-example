@@ -16,5 +16,6 @@ deployment:
   beta_distribution:
     branch: release
     commands:
+      - sudo gem update gym
       - fastlane gym -s "Main" -q "Beta" -j enterprise -o $CIRCLE_ARTIFACTS
 
